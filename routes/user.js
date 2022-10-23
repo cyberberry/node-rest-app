@@ -18,4 +18,14 @@ router.post('/', (req, res) => {
 
 });
 
+router.get('/:id/records', (req, res) => {
+
+  let records = database.records.filter(record => record.user_id == req.params.id);
+
+  res.status(201).json({
+    records: records
+  });
+
+});
+
 module.exports = router;
