@@ -28,4 +28,17 @@ router.get('/:id/records', (req, res) => {
 
 });
 
+router.get('/:userId/records/category/:categoryId', (req, res) => {
+
+  let records = database.records.filter(record =>
+    record.user_id == req.params.userId &&
+    record.category_id == req.params.categoryId
+  );
+
+  res.status(201).json({
+    records: records
+  });
+
+});
+
 module.exports = router;
