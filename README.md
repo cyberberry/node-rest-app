@@ -1,3 +1,3 @@
 # node-rest-app
-RUN: docker-compose up
-STOP: docker-compose down
+<p>RUN: docker-compose up</p>
+<p>STOP: docker-compose down</p>
