@@ -1,2 +1,3 @@
 # node-rest-app
-To run a project click start.bat file
+<p>RUN: docker-compose up</p>
+<p>STOP: docker-compose down</p>
